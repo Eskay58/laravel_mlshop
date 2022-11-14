@@ -1,10 +1,11 @@
 @props(['status' => 'info'])
 
 @php
+
     if($status === 'info'){
         $bgColor = 'bg-blue-300';
     }
-    if($status === 'error'){
+    if($status === 'alert'){
         $bgColor = 'bg-red-500';
     }
 @endphp
