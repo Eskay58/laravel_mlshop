@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            商品一覧
+            ホーム
         </h2>
     </x-slot>
 
@@ -13,11 +13,10 @@
                     <div class="flex justify-end mb-4">
                         <button onclick="location.href='{{ route('owner.products.create') }}'"" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">新規登録</button>
                     </div>
-                    {{-- <div class="flex flex-wrap">
-                    @foreach ($ownerInfo as $owner)
-                        @foreach ($owner->shop->product as $product)
+                    <div class="flex flex-wrap">
+                        @foreach ($products as $product)
                             <div class="w-1/4 p-2 md:p-4">
-                                <a href="{{ route('owner.products.edit', ['product' => $product->id]) }}">
+                                <a href="">
                                     <div class="border rounded-md p-2 md:p-4">
                                         <x-thumbnail filename="{{ $product->imageFirst->filename ?? ''}}" type="products" />
                                         <div class="text-gray-700">
@@ -27,8 +26,7 @@
                                 </a>    
                             </div>
                         @endforeach
-                    @endforeach
-                    </div> --}}
+                    </div>
                 </div>
             </div>
         </div>
