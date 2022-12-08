@@ -145,6 +145,10 @@
   .micromodal-slide .modal__overlay {
     will-change: transform;
   }
+.swiper {
+    /* width: 600px; */
+    height: 300px;
+  }
 /* @import 'micromodal';
 @tailwind base;
 @tailwind components;
@@ -963,14 +967,11 @@ select {
 .ml-4 {
   margin-left: 1rem;
 }
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-.ml-auto {
-  margin-left: auto;
-}
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -1011,11 +1012,11 @@ select {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
-}
-.mr-3 {
-  margin-right: 0.75rem;
 }
 .block {
   display: block;
@@ -1413,6 +1414,12 @@ select {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.pl-3 {
+  padding-left: 0.75rem;
+}
+.pr-10 {
+  padding-right: 2.5rem;
+}
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1434,17 +1441,11 @@ select {
 .pt-1 {
   padding-top: 0.25rem;
 }
-.pl-3 {
-  padding-left: 0.75rem;
-}
 .pr-4 {
   padding-right: 1rem;
 }
 .pb-0 {
   padding-bottom: 0px;
-}
-.pr-10 {
-  padding-right: 2.5rem;
 }
 .text-left {
   text-align: left;
