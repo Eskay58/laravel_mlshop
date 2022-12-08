@@ -10,9 +10,9 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     <x-flash-message :status="session('status')" />
-                    <div class="flex justify-end mb-4">
+                    {{-- <div class="flex justify-end mb-4">
                         <button onclick="location.href='{{ route('owner.products.create') }}'"" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">新規登録</button>
-                    </div>
+                    </div> --}}
                     <div class="flex flex-wrap">
                         @foreach ($products as $product)
                             <div class="w-1/4 p-2 md:p-4">
