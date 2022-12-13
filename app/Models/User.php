@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Product;
 
 class User extends Authenticatable
 {
@@ -41,4 +42,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function products()
+    {
+        return $this->belogngsToMany(Product::class, 'carts')
+             ->withPivot(['id', 'quantity']); 
+             // 中間テーブルのカラムを指定して取得する
+             // デフォルトで取得できるのは関連付けるカラム(user_id, product_id)のみ取得
+    }
+
 }
