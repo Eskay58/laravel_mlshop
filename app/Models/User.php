@@ -45,8 +45,9 @@ class User extends Authenticatable
 
     public function products()
     {
-        return $this->belogngsToMany(Product::class, 'carts')
+        return $this->belongsToMany(Product::class, 'carts')
              ->withPivot(['id', 'quantity']); 
+             belongsToMany('App\Rank');
              // 中間テーブルのカラムを指定して取得する
              // デフォルトで取得できるのは関連付けるカラム(user_id, product_id)のみ取得
     }
