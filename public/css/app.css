@@ -1019,14 +1019,14 @@ select {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .block {
   display: block;
@@ -2036,11 +2036,6 @@ select {
   }
 
 
-  .md\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-
   .md\:w-3\/12 {
     width: 25%;
   }
@@ -2053,6 +2048,11 @@ select {
 
   .md\:w-2\/12 {
     width: 16.666667%;
+  }
+
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
   }
 
 
