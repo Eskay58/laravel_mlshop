@@ -1026,14 +1026,14 @@ select {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.mr-4 {
+  margin-right: 1rem;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
-}
-.mr-4 {
-  margin-right: 1rem;
 }
 .block {
   display: block;
@@ -2162,11 +2162,6 @@ select {
 
   .lg\:justify-between {
     justify-content: space-between;
-  }
-
-
-  .lg\:justify-around {
-    justify-content: space-around;
   }
 
 
