@@ -23,11 +23,11 @@
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             {{-- @include('layouts.navigation') --}}
-            @if (auth('admin')->user())
+            @if (request()->is('admin*'))
                 @include('layouts.admin-navigation')
-            @elseif (auth('owners')->user())
+            @elseif (request()->is('owner*'))
                 @include('layouts.owner-navigation')
-            @elseif (auth('users')->user())
+            @else
                 @include('layouts.user-navigation')
             @endif
             
