@@ -5,6 +5,7 @@ namespace App\Services;
 use Illuminate\Support\Facades\Storage;
 use InterventionImage;
 
+// filename renamed
 class ImageService
 {
     public static function upload($imageFile, $folderName) {
