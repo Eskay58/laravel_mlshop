@@ -107,15 +107,17 @@ class CartController extends Controller
     public function success() {
 
         ////
-        $items = Cart::where('user_id', Auth::id())->get();
-        $products = CartService::getItemsInCart($items);
-        $user = User::findOrFail(Auth::id());
+        // $items = Cart::where('user_id', Auth::id())->get();
 
-        SendThanksMail::dispatch($products, $user);
+        // $products = CartService::getItemsInCart($items);
+        // $user = User::findOrFail(Auth::id());
 
-        foreach($products as $product) {
-            SendOrderedMail::dispatch($product, $user);
-        }
+        // 本番向けにメール送信処理をコメントアウト
+        // SendThanksMail::dispatch($products, $user);
+
+        // foreach($products as $product) {
+        //     SendOrderedMail::dispatch($product, $user);
+        // }
 
         // dd('ユーザーメール送信テスト');
         ////

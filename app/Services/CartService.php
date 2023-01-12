@@ -17,7 +17,7 @@ class CartService {
             $owner = $p->shop->owner;
             $ownerInfo = [
                 'ownerName' => $owner->name,
-                'email' => $owner->email,
+                'email' => $owner->email
             ];
 
             // 商品情報抽出
